@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        body{
+            margin: 0px;
+            height: 680px;
+            width: 1440px;
+            display: flex;
+        }
+        .d0{
+            margin-top: 0px;
+            display: flex;
+        }
+        .d1{
+            background-image: url(office4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 70%;
+            color: aliceblue;
+            margin-top: 1px;
+            height: 680px;
+            width: 750px;
+            display: inline-block;
+            background-blend-mode:darken;
+            padding: 5px;
+            background-color: rgb(0, 47, 255);
+            box-shadow: 2px 8px 12px rgb(83, 82, 82);
+        }
+        .d2{
+            display: inline-block;
+            height: 691px;
+            width: 765px;
+            background-color: rgb(230, 235, 235);
+            left: 5px;
+            position: relative;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        form{
+            margin-top: 100px;
+        }
+        h1{
+            margin-left:70px;
+        }
+         h3{
+            margin-top:250px;
+            word-spacing: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: x-large;
+            margin-left:70px;
+            letter-spacing:1px;
+        }
+        .p1{
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left:70px;
+            letter-spacing:1px;
+            word-spacing: 4px;
+        }
+        .p2{
+            text-align: center;
+        }
+        label{
+            margin-right:317px;
+        }
+        #Email-Address{
+            width:500px;
+            height:20px;
+            padding: 4px;
+            margin-left: 100px;
+        }
+        #Password{
+            width:500px;
+            height:20px;
+            padding: 4px;
+            margin-left: 100px;
+        }
+        .pwd{
+            margin-right: 347px;
+        }
+        h2{
+           margin-left:155px; 
+           margin-top: 200px; 
+        }
+        .a1{
+            margin-right:10px;
+            margin-left: 180px;
+        }
+      .a3{
+         margin-left:100px;
+         text-align:left;
+      }
+      .a2{
+        text-align:center;
+        margin-left: 100px;
+      }
+      .button{
+         width:500px;
+            height:30px;
+            padding: 4px;
+              margin-left: 100px;
+              color: aliceblue;
+              background-color: rgb(2, 48, 255);
+      }
+    </style>
+</head>
+<body >
+    <div class="d0">
+        <div class="d1">
+            <h1>Oxxy</h1>
+            <h3>
+                Welcome Back...!
+            </h3>
+            <p class="p1">We are glad to see you again!
+                Get access to your orders.<br>
+                Wishlist and Recommendations.
+            </p>
+        </div>
+        <div class="d2">
+            <form>
+                <h2>Log In</h2>
+                <p class="p2">
+                    <label for="Email-Address">Email Address</label><br>
+                    <input type="text"  id="Email-Address" placeholder="Enter your e-mail"><br><br>
+                    <label class="pwd" for="Password" >Password</label><br>
+                    <input type="text" id="Password" placeholder="Enter Password"><br>
+                    <br>
+                    <input class="a3"type="checkbox">Remember me <a class="a1"href="#">Forgot Password ?</a><br>
+                    <br>
+                    <input class="button" type="submit" value="Login">
+                </p>
+            </form>
+            <p class="a2">
+                Don't have an account? <a href="#">Sign Up</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
