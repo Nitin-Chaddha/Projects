@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .calculator{
+            width:320px;
+            margin: 50px auto;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            background: linear-gradient(rgb(105, 104, 104),rgb(70, 71, 71));
+        }
+        button{
+            width: 60px;
+            height: 60px;
+            margin: 8px;
+            font-size: 20px;
+            background-color: hsl(0,0%, 30%);
+            border-radius: 50%;
+            box-shadow: 1px 1px 10px whitesmoke;
+            color: aliceblue;
+            cursor: pointer;
+        }
+        .calculator input[type="text"]{
+            width: 260px;
+            padding: 11px;
+            margin-bottom: 10px;
+            margin-left: 15px;
+        }
+        button:hover{
+            background-color: hsl(0,0%, 40%);
+        }
+        .operation-btn{
+            background-color: hsl(35,100%,55%);
+        }
+        .operation-btn:hover{
+            background-color: hsl(35,100%,65%);
+        }
+        .operation-btn:active{
+            background-color: hsl(35,100%,75%);
+        }
+        #Display{
+            font-size:xx-large;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="Display" disabled>
+        <div id="keys">
+        <button onclick="texttodisplay('1')">1</button>
+        <button onclick="texttodisplay('2')">2</button>
+        <button onclick="texttodisplay('3')">3</button>
+        <button onclick="texttodisplay('+')" class="operation-btn">+</button>
+        <button onclick="texttodisplay('4')">4</button>
+        <button onclick="texttodisplay('5')">5</button>
+        <button onclick="texttodisplay('6')">6</button>
+        <button onclick="texttodisplay('-')" class="operation-btn">-</button>
+        <button onclick="texttodisplay('7')">7</button>
+        <button onclick="texttodisplay('8')">8</button>
+        <button onclick="texttodisplay('9')">9</button>
+        <button onclick="texttodisplay('/')" class="operation-btn">/</button>
+        <button onclick="texttodisplay('0')">0</button>
+        <button onclick="texttodisplay('*')" class="operation-btn">*</button>
+        <button onclick="Cleardisplay('C')" class="operation-btn">C</button>
+        <button onclick="Calculate()" >=</button>
+        </div>
+    </div>
+    <script>
+        const display = document.getElementById("Display");
+
+        function texttodisplay(input){
+            display.value += input;
+        }
+
+        function Cleardisplay(){
+            display.value = "";
+        }
+
+        function Calculate(){
+            try{
+            display.value = eval(display.value);
+        } catch(error){
+            display.value = "Error......" ;
+        }
+    }
+    </script>
+</body>
+</html>
